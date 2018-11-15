@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+if [ -d /config/www/nextcloud/apps/fulltextsearch ]; then
+  exec /usr/bin/sudo -u abc php /config/www/nextcloud/occ fulltextsearch:live
+fi
