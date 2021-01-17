@@ -32,3 +32,5 @@ jobs:
         with:
           # Paths to dockerfiles
           target: ./nextcloud/Dockerfile ./moneywiz/Dockerfile ./certbot/Dockerfile ./netatalk/Dockerfile ./scanservjs/Dockerfile ./calibredb/Dockerfile ./elasticsearch/Dockerfile 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
