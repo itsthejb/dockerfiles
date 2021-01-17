@@ -31,6 +31,6 @@ jobs:
         uses: luke142367/Docker-Lint-Action@v1.1.1
         with:
           # Paths to dockerfiles
-          target: ./moneywiz/Dockerfile ./certbot/Dockerfile ./netatalk/Dockerfile ./scanservjs/Dockerfile ./calibredb/Dockerfile ./elasticsearch/Dockerfile 
+          target: ./certbot/Dockerfile
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
